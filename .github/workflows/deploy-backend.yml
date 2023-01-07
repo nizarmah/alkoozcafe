@@ -1,0 +1,27 @@
+name: Deploy Backend
+on:
+  push:
+    branches: [main]
+    paths:
+      - backend/**
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          npm install
+      - name: Build Backend
+        run: |
+          npm run build
+      - name: Deploy Studio
+        with:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        run: |
+          npm run deploy
+      - name: Deploy GraphQL API
+        with:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        run: |
+          npm run deploy-graphql
