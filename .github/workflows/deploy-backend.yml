@@ -21,22 +21,21 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Change directory to backend
+        run: cd backend
+
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
       - name: Build
-        run: |
-          npm run build
+        run: npm run build
 
       - name: Deploy studio
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        run: |
-          npm run deploy
+        run: npm run deploy
 
       - name: Deploy graphql
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        run: |
-          npm run deploy-graphql
+        run: npm run deploy-graphql
