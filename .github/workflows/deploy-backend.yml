@@ -1,26 +1,41 @@
 name: Deploy Backend
+
 on:
   push:
     branches: [deploy-with-sanity]
     paths:
       - backend/**
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [17.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Dependencies
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
         run: |
           npm install
-      - name: Build Backend
+
+      - name: Build
         run: |
           npm run build
-      - name: Deploy Studio
+
+      - name: Deploy studio
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         run: |
           npm run deploy
-      - name: Deploy GraphQL API
+
+      - name: Deploy graphql
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         run: |
