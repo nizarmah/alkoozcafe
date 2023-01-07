@@ -16,12 +16,12 @@ jobs:
         run: |
           npm run build
       - name: Deploy Studio
-        with:
+        env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         run: |
           npm run deploy
       - name: Deploy GraphQL API
-        with:
+        env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         run: |
           npm run deploy-graphql
