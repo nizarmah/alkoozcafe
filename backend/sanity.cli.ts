@@ -7,7 +7,7 @@ export default defineCliConfig({
   },
   graphql: [
     {
-      playground: true
+      playground: false
     },
   ],
 })
