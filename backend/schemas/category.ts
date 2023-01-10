@@ -10,6 +10,11 @@ export default defineType({
       name: 'name',
       title: 'Name',
     }),
+    defineField({
+      type: 'number',
+      name: 'priority',
+      title: 'Priority'
+    })
   ],
   preview: {
     select: {
