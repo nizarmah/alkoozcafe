@@ -1,7 +1,7 @@
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
-  type: 'object',
+  type: 'document',
   name: 'menu',
   title: 'Menu',
   fields: [
@@ -18,7 +18,7 @@ export default defineType({
   ],
   preview: {
     select: {},
-    prepare(selection) {
+    prepare() {
       return {
         title: 'Al Kooz Café Menu'
       }
