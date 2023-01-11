@@ -1,5 +1,7 @@
 import { defineField, defineType } from 'sanity'
 
+import { getNamePreview } from '../utils/name'
+
 export default defineType({
   type: 'object',
   name: 'name',
@@ -29,7 +31,7 @@ export default defineType({
     },
     prepare(selection) {
       return {
-        title: `${selection.nameEnglish} - ${selection.nameArabic}`
+        title: getNamePreview(selection)
       }
     },
   },

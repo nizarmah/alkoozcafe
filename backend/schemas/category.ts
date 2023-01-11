@@ -1,5 +1,7 @@
 import { defineField, defineType } from 'sanity'
 
+import { getNamePreview } from '../utils/name'
+
 export default defineType({
   type: 'document',
   name: 'category',
@@ -11,17 +13,22 @@ export default defineType({
       title: 'Name',
     }),
     defineField({
-      type: 'number',
-      name: 'priority',
-      title: 'Priority'
-    })
+      type: 'array',
+      name: 'itemList',
+      title: 'Items',
+      of: [{
+        type: 'reference',
+        to: [{type: 'item'}]
+      }],
+      description: 'The list of items that belong to this category'
+    }),
   ],
   preview: {
     select: {
       name: 'name',
     },
     prepare(selection) {
-      const name = `${selection.name.nameEnglish} - ${selection.name.nameArabic}`
+      const name = getNamePreview(selection.name)
 
       return {
         title: name

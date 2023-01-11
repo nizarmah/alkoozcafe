@@ -1,5 +1,7 @@
 import { defineField, defineType } from 'sanity'
 
+import { getPricePreview } from '../utils/price'
+
 export default defineType({
   type: 'object',
   name: 'price',
@@ -42,22 +44,7 @@ export default defineType({
       currency: 'currency'
     },
     prepare(selection) {
-      switch (selection.currency) {
-        case 'usd':
-          return {
-            title: `$${selection.amount}`
-          }
-
-        case 'lbp':
-          return {
-            title: `${selection.amount} L.L.`
-          }
-
-        default:
-          return {
-            title: `${selection.amount} ${selection.currency}`
-          }
-      }
+      return getPricePreview(selection)
     },
   },
 })
