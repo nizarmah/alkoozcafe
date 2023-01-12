@@ -8,12 +8,12 @@ import Header from '../components/Header'
 
 type IndexPageProps = {
   data: {
-    allSanityItem: AllSanityItem
+    sanityMenu: SanityMenu
   }
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
-  const allSanityItem: AllSanityItem = data.allSanityItem
+  console.log(data)
 
   return (
     <main className='text-slate-900'>
@@ -22,7 +22,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         <Header />
         <Menu
           className='w-full xl:w-2/3 xl:px-12 lg:w-5/6 lg:px-6'
-          data={allSanityItem}
+          data={data.sanityMenu}
         />
       </div>
     </main>
@@ -35,24 +35,20 @@ export const Head: HeadFC = () => <title>Al Kooz Café</title>
 
 export const query = graphql`
 {
-  allSanityItem {
-    group(field: {category: {name: {nameEnglish: SELECT}}}) {
-      fieldValue
-      nodes {
+  sanityMenu(_id: { eq: "menu" }) {
+    categoryList {
+      name {
+        nameArabic
+        nameEnglish
+      }
+      itemList {
         name {
-          nameEnglish
           nameArabic
+          nameEnglish
         }
         priceList {
           amount
           currency
-        }
-        category {
-          name {
-            nameEnglish
-            nameArabic
-          }
-          priority
         }
       }
     }

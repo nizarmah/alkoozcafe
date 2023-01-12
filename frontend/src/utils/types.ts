@@ -10,22 +10,16 @@ type SanityPrice = {
   currency: SanityCurrency
 }
 
-type SanityCategory = {
-  name: SanityName
-  priority: number
-}
-
 type SanityItem = {
   name: SanityName
   priceList: SanityPrice[]
-  category: SanityCategory
 }
 
-type GroupSanityItem = {
-  nodes: SanityItem[]
-  fieldValue: string
+type SanityCategory = {
+  name: SanityName
+  itemList: SanityItem[]
 }
 
-type AllSanityItem = {
-  group: GroupSanityItem[]
+type SanityMenu = {
+  categoryList: SanityCategory[]
 }
