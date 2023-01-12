@@ -3,7 +3,20 @@ import type { GatsbyConfig } from 'gatsby'
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Al Kooz Café`,
-    siteUrl: `https://alkoozcafe.com`
+    description: (
+      `Lebanese family friend place in Barouk, Chouf District.`
+      + ` Lebanese Mezza, Saj, Sandwiches, and more...`
+    ),
+    keywords: (
+      `alkooz,cafe,restaurant,food,saj,lebanese,mezza,sandwich,sandwiches,`
+      + `plates,hotplate,desserts,hotdrink,softdrink,alcohol,argile,snacks,`
+      + `family,friendly,cozy,vibes,delicious,service,intimate,experience,`
+      + `barouk,chouf,arz,cedar,forest,nature,view,sunset,breeze,summer,winter`
+    ),
+    siteUrl: `https://alkoozcafe.com`,
+    og: {
+      siteName: `Al Kooz Café`
+    }
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -11,6 +24,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -19,16 +33,47 @@ const config: GatsbyConfig = {
       }
     },
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          quality: 70,
+          formats: ['auto', 'webp', 'avif'],
+          placeholder: 'tracedSVG',
+        },
+      },
+    },
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: './src/pages/',
+      },
+      __key: 'pages',
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         'icon': 'src/images/icon.svg',
-        icon_options: {
-          purpose: 'any maskable'
+        'icon_options': {
+          'purpose': 'maskable any'
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://alkoozcafe.com`,
+      },
     }
   ]
 }
