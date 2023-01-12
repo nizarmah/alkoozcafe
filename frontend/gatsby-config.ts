@@ -63,10 +63,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        'icon': 'src/images/icon.svg',
-        'icon_options': {
-          'purpose': 'maskable any'
-        }
+        'icon': 'src/images/icon.svg'
       }
     },
     {
