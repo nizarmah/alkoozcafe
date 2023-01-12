@@ -17,18 +17,23 @@
   },
   "dependencies": {
     "gatsby": "^5.3.3",
-    "gatsby-plugin-image": "^3.3.2",
+    "gatsby-plugin-canonical-urls": "^5.4.0",
+    "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-manifest": "^5.3.1",
-    "gatsby-plugin-sharp": "^5.3.2",
+    "gatsby-plugin-react-helmet": "^6.4.0",
+    "gatsby-plugin-sharp": "^5.4.0",
+    "gatsby-source-filesystem": "^5.4.0",
     "gatsby-source-sanity": "^7.6.1",
-    "gatsby-transformer-sharp": "^5.3.1",
+    "gatsby-transformer-sharp": "^5.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
+    "@types/react-helmet": "^6.1.6",
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.3.0",
     "postcss": "^8.4.21",

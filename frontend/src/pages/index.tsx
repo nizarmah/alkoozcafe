@@ -5,6 +5,7 @@ import type { HeadFC } from 'gatsby'
 import Menu from '../components/Menu'
 import Background from '../components/Background'
 import Header from '../components/Header'
+import Seo from '../components/Seo'
 
 type IndexPageProps = {
   data: {
@@ -17,6 +18,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
 
   return (
     <main className='text-slate-900'>
+      <Seo />
       <Background />
       <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
         <Header />
