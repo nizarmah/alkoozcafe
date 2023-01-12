@@ -6,16 +6,13 @@ import { keygen } from '../../utils/keygen'
 
 type CategoryProps = {
   className: string
-  data: GroupSanityItem
+  data: SanityCategory
 }
 
-const Category: React.FC<CategoryProps> = ({ className, data }) => {
-  const itemList: SanityItem[] = data.nodes
+const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList } }) => {
   if (itemList.length === 0) {
     return null
   }
-
-  const category: SanityCategory = itemList[0].category
 
   return (
     <div className={className}>
@@ -23,7 +20,7 @@ const Category: React.FC<CategoryProps> = ({ className, data }) => {
         <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
         <Name
           className='text-2xl font-medium flex-1 py-7 px-8'
-          data={category.name}
+          data={name}
         />
       </div>
       <div className='relative flex-row items-center px-8'>
