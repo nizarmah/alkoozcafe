@@ -3,20 +3,14 @@ import * as React from 'react'
 import Name from '../Name'
 import Item from '../Item'
 import { keygen } from '../../utils/keygen'
-import { validateItem } from '../../utils/validation'
 
 type CategoryProps = {
   className: string
   data: SanityCategory
 }
 
-const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList } }) => {
-  const filteredItemList = itemList.filter(
-    (item) => validateItem(item))
-
-  if (filteredItemList.length === 0) return null
-
-  return (
+const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList } }) =>
+  (
     <div className={className}>
       <div className='relative flex items-center'>
         <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
@@ -27,17 +21,18 @@ const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList }
       </div>
       <div className='relative flex-row items-center px-8'>
         {
-          filteredItemList.map((item) =>
-            <Item
-              className='first:mt-0 last:mb-0 relative'
-              data={item}
-              key={keygen(item.name.nameEnglish)}
-            />
+          itemList.map((item) =>
+            (
+              <Item
+                className='first:mt-0 last:mb-0 relative'
+                data={item}
+                key={keygen(item.name.nameEnglish)}
+              />
+            )
           )
         }
       </div>
     </div>
   )
-}
 
 export default Category
