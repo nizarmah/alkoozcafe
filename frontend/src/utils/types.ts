@@ -1,25 +1,49 @@
-type SanityName = {
+interface NullableSanityName {
+  nameEnglish: string | null
+  nameArabic: string | null
+}
+
+interface SanityName extends NullableSanityName {
   nameEnglish: string
   nameArabic: string
 }
 
 type SanityCurrency = 'usd' | 'lbp'
 
-type SanityPrice = {
+interface NullableSanityPrice {
+  amount: number | null
+  currency: SanityCurrency | null
+}
+
+interface SanityPrice extends NullableSanityPrice {
   amount: number
   currency: SanityCurrency
 }
 
-type SanityItem = {
+interface NullableSanityItem {
+  name: NullableSanityName | null
+  priceList: NullableSanityPrice[] | null
+}
+
+interface SanityItem extends NullableSanityItem {
   name: SanityName
   priceList: SanityPrice[]
 }
 
-type SanityCategory = {
+interface NullableSanityCategory {
+  name: NullableSanityName | null
+  itemList: NullableSanityItem[] | null
+}
+
+interface SanityCategory extends NullableSanityCategory {
   name: SanityName
   itemList: SanityItem[]
 }
 
-type SanityMenu = {
+interface NullableSanityMenu {
+  categoryList: NullableSanityCategory[] | null
+}
+
+interface SanityMenu extends NullableSanityMenu {
   categoryList: SanityCategory[]
 }

@@ -6,17 +6,16 @@ import Menu from '../components/Menu'
 import Background from '../components/Background'
 import Header from '../components/Header'
 import Seo from '../components/Seo'
+import { cleanMenu } from '../utils/cleaner'
 
 type IndexPageProps = {
   data: {
-    sanityMenu: SanityMenu
+    sanityMenu: NullableSanityMenu
   }
 }
 
-const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
-  console.log(data)
-
-  return (
+const IndexPage: React.FC<IndexPageProps> = ({ data }) =>
+  (
     <main className='text-slate-900'>
       <Seo />
       <Background />
@@ -24,12 +23,11 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         <Header />
         <Menu
           className='w-full xl:w-2/3 xl:px-12 lg:w-5/6 lg:px-6'
-          data={data.sanityMenu}
+          data={cleanMenu(data.sanityMenu)}
         />
       </div>
     </main>
   )
-}
 
 export default IndexPage
 
