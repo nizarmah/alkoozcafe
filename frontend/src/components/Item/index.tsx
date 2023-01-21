@@ -1,17 +1,20 @@
 import * as React from 'react'
-import { keygen } from '../../utils/keygen'
 
 import Name from '../Name'
 import Price from '../Price'
+import { keygen } from '../../utils/keygen'
+import { validatePrice } from '../../utils/validation'
 
 type ItemProps = {
   className: string
   data: SanityItem
 }
 
-const Item: React.FC<ItemProps> = ({ className, data }) => {
-  const name: SanityName = data.name
-  const priceList: SanityPrice[] = data.priceList
+const Item: React.FC<ItemProps> = ({ className, data: { name, priceList } }) => {
+  const filteredPriceList = priceList.filter(
+    (price) => validatePrice(price))
+
+  if (filteredPriceList.length === 0) return null
 
   return (
     <div className={className}>
@@ -22,7 +25,7 @@ const Item: React.FC<ItemProps> = ({ className, data }) => {
         />
         <div className='w-full flex mt-1 mb-5'>
           {
-            priceList.map((price) =>
+            filteredPriceList.map((price) =>
               <Price
                 data={price}
                 key={keygen(price.amount.toString())}

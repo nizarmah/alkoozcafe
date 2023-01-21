@@ -3,6 +3,7 @@ import * as React from 'react'
 import Name from '../Name'
 import Item from '../Item'
 import { keygen } from '../../utils/keygen'
+import { validateItem } from '../../utils/validation'
 
 type CategoryProps = {
   className: string
@@ -10,9 +11,10 @@ type CategoryProps = {
 }
 
 const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList } }) => {
-  if (itemList.length === 0) {
-    return null
-  }
+  const filteredItemList = itemList.filter(
+    (item) => validateItem(item))
+
+  if (filteredItemList.length === 0) return null
 
   return (
     <div className={className}>
@@ -25,7 +27,7 @@ const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList }
       </div>
       <div className='relative flex-row items-center px-8'>
         {
-          itemList.map((item) =>
+          filteredItemList.map((item) =>
             <Item
               className='first:mt-0 last:mb-0 relative'
               data={item}
