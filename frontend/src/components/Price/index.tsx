@@ -20,7 +20,7 @@ const Price: React.FC<PriceProps> = ({ data }) => {
   }
 
   return (
-    <span className='text-md px-6 mb-1 mr-6 bg-green-200 text-green-800 rounded-full'>{price}</span>
+    <span className='text-base print:text-base print:font-light px-6 print:px-0 mb-1 mr-6 bg-green-200 print:bg-transparent text-green-800 print:text-slate-900 rounded-full'>{price}</span>
   )
 }
 
