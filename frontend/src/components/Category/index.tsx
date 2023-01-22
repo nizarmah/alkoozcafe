@@ -7,19 +7,30 @@ import { keygen } from '../../utils/keygen'
 type CategoryProps = {
   className: string
   data: SanityCategory
+  onLoad?: (
+    categoryElement: HTMLDivElement,
+    itemListElement: HTMLDivElement
+  ) => void
 }
 
-const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList } }) =>
-  (
-    <div className={className}>
+const Category: React.FC<CategoryProps> = ({
+  className,
+  data: { name, itemList },
+  onLoad = () => {}
+}) => {
+  const categoryRef = React.useCallback((element: HTMLDivElement) =>
+    onLoad(element, element.lastElementChild as HTMLDivElement), [])
+
+  return (
+    <div ref={categoryRef} className={className}>
       <div className='relative flex items-center'>
         <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
         <Name
-          className='text-2xl font-medium flex-1 py-7 px-8'
+          className='text-2xl print:text-lg font-medium flex-1 py-7 print:py-2 px-8 print:px-0'
           data={name}
         />
       </div>
-      <div className='relative flex-row items-center px-8'>
+      <div className='relative flex-row items-center px-12 print:px-1'>
         {
           itemList.map((item) =>
             (
@@ -34,5 +45,6 @@ const Category: React.FC<CategoryProps> = ({ className, data: { name, itemList }
       </div>
     </div>
   )
+}
 
 export default Category

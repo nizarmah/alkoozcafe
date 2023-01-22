@@ -7,6 +7,7 @@ import Background from '../components/Background'
 import Header from '../components/Header'
 import Seo from '../components/Seo'
 import { cleanMenu } from '../utils/cleaner'
+import PrintCompatibleContent from '../components/PrintCompatibleContent'
 
 type IndexPageProps = {
   data: {
@@ -19,12 +20,17 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) =>
     <main className='text-slate-900'>
       <Seo />
       <Background />
-      <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
-        <Header />
-        <Menu
-          className='w-full xl:w-2/3 xl:px-12 lg:w-5/6 lg:px-6'
-          data={cleanMenu(data.sanityMenu)}
-        />
+      <div className='px-2 print:px-0 lg:px-16 print:lg:px-0 md:px-8 print:md:px-0'>
+        <PrintCompatibleContent
+          header={
+            <Header className='' />
+          }
+        >
+          <Menu
+            className='w-full print:w-full print:px-8 xl:w-2/3 print:xl:w-full xl:px-12 print:xl:px-8 lg:w-5/6 print:lg:w-full lg:px-6 print:lg:px-8'
+            data={cleanMenu(data.sanityMenu)}
+          />
+        </PrintCompatibleContent>
       </div>
     </main>
   )
