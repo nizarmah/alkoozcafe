@@ -2,7 +2,7 @@ import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Al Kooz Café`,
+    title: `Al Kooz Café & Restaurant`,
     description: (
       `Lebanese family friend place in Barouk, Chouf District.`
       + ` Lebanese Mezza, Saj, Sandwiches, and more...`
@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     ),
     siteUrl: `https://alkoozcafe.com`,
     og: {
-      siteName: `Al Kooz Café`
+      siteName: `Al Kooz Café & Restaurant`
     }
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
