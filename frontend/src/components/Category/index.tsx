@@ -23,10 +23,10 @@ const Category: React.FC<CategoryProps> = ({
 
   return (
     <div ref={categoryRef} className={className}>
-      <div className='relative flex items-center'>
+      <div className='relative flex items-center print:mb-2'>
         <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
         <Name
-          className='text-2xl print:text-lg font-medium flex-1 py-7 print:py-2 px-8 print:px-0'
+          className='text-2xl print:text-2xl font-medium flex-1 py-7 print:py-2 px-8 print:px-0'
           data={name}
         />
       </div>

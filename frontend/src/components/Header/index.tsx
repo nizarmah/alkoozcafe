@@ -14,8 +14,8 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <div className='relative flex items-center py-7'>
             <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
             <a className='relative mr-auto flex grow items-center ' href='/'>
-              <Logo className='mx-4 h-8 print:h-4 top-[20%] fill-slate-900' />
-              <span className='text-2xl print:text-base block flex-1'>Al Kooz Café</span>
+              <Logo className='mx-4 h-8 print:h-6 top-[20%] fill-slate-900' />
+              <span className='text-2xl print:text-2xl block flex-1'>Al Kooz Café</span>
             </a>
           </div>
         </nav>
