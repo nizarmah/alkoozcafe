@@ -15,7 +15,7 @@ const PrintCompatibleContent: React.FC<PrintCompatibleContentProps> = ({ header,
       <tbody><tr><td>
         {children}
       </td></tr></tbody>
-      <tfoot><tr><td>
+      <tfoot className='print:fixed print:bottom-0 print:left-0 print:right-0'><tr><td>
         {footer}
       </td></tr></tfoot>
     </table>

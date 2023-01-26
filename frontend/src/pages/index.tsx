@@ -5,6 +5,7 @@ import type { HeadFC } from 'gatsby'
 import Menu from '../components/Menu'
 import Background from '../components/Background'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Seo from '../components/Seo'
 import { cleanMenu } from '../utils/cleaner'
 import PrintCompatibleContent from '../components/PrintCompatibleContent'
@@ -23,7 +24,10 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) =>
       <div className='px-2 print:px-0 lg:px-16 print:lg:px-0 md:px-8 print:md:px-0'>
         <PrintCompatibleContent
           header={
-            <Header className='' />
+            <Header className='w-full' />
+          }
+          footer={
+            <Footer className='print:absolute w-full bottom-0' />
           }
         >
           <Menu

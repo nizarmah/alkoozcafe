@@ -14,10 +14,10 @@ const Item: React.FC<ItemProps> = ({ className, data: { name, priceList } }) =>
     <div className={className}>
       <div className='relative flex flex-col items-center'>
         <Name
-          className='w-full text-lg print:text-base font-light print:font-normal flex-1 mt-4 print:mt-1 mb-1 print:mb-0'
+          className='w-full text-lg print:text-lg font-light print:font-semibold flex-1 mt-4 print:mt-0 mb-1 print:mb-0'
           data={name}
         />
-        <div className='w-full flex mt-1 print:mt-0 mb-5 print:mb-1'>
+        <div className='w-full flex mt-1 print:mt-0 mb-5 print:mb-0'>
           {
             priceList.map((price) =>
               (

@@ -9,7 +9,7 @@ type MenuProps = {
 }
 
 const Menu: React.FC<MenuProps> = ({ className, data: { categoryList } }) => {
-  const ROW_HEIGHT = 1000
+  const ROW_HEIGHT = 600
 
   const onCategoryLoad = React.useCallback(
     (categoryElement: HTMLDivElement, itemsListElement: HTMLDivElement) => {
@@ -28,7 +28,7 @@ const Menu: React.FC<MenuProps> = ({ className, data: { categoryList } }) => {
           categoryList.map((category) =>
             (
               <Category
-                className='col-span-1 first:mt-6 print:first:mt-6 my-12 print:my-0 print:mt-6 bg-white print:bg-transparent bg-opacity-50 print:bg-opacity-100 rounded-md border print:border-none border-slate-900/8 break-inside-avoid'
+                className='col-span-1 first:mt-6 print:first:mt-2 my-12 print:my-0 print:mt-2 bg-white print:bg-transparent bg-opacity-50 print:bg-opacity-100 rounded-md border print:border-none border-slate-900/8 break-inside-avoid'
                 data={category}
                 key={keygen(category.name.nameEnglish)}
                 onLoad={onCategoryLoad}

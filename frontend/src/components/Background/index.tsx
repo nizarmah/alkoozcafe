@@ -4,7 +4,7 @@ import Logo from '../Logo'
 const Background: React.FC = () => {
   return (
     <div>
-      <div className='hidden print:flex fixed justify-center items-center w-screen h-screen isolate bg-white opacity-5 -z-10'>
+      <div className='hidden print:flex fixed justify-center items-center w-screen h-screen isolate bg-white opacity-10 -z-10'>
         <Logo className='absolute h-[80vw]' />
       </div>
       <div className='print:hidden fixed w-screen h-screen isolate bg-white -z-10'>
