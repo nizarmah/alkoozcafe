@@ -12,7 +12,7 @@ const IndexPage: React.FC<IndexPageProps> = ({}) =>
     <main className='text-slate-900'>
       <Seo />
 
-      <object className='w-screen h-screen' data="/static/Al%20Kooz%20Cafe%20—%20Menu.pdf" type="application/pdf">
+      <object className='w-screen h-screen' data="/Al%20Kooz%20Cafe%20—%20Menu.pdf" type="application/pdf">
         <Background />
         <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
           <Header className='w-full' />
