@@ -1,15 +1,12 @@
 import * as React from 'react'
-import { HeadFC, Link } from 'gatsby'
+import { HeadFC, Link, PageProps } from 'gatsby'
 
 import Seo from '../components/Seo'
 import Background from '../components/Background'
 import Header from '../components/Header'
 
-type IndexPageProps = {}
-
-const IndexPage: React.FC<IndexPageProps> = ({}) => {
-  const baseUrl = window.location.href
-  const pdfMenuUrl = new URL('/Al Kooz Cafe — Menu.pdf', baseUrl)
+const IndexPage: React.FC<PageProps> = ({ location }) => {
+  const pdfMenuUrl = new URL('/Al Kooz Cafe — Menu.pdf', location.href)
 
   return (
     <main className='text-slate-900'>
