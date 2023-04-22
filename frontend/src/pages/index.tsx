@@ -12,7 +12,7 @@ const IndexPage: React.FC<IndexPageProps> = ({}) =>
     <main className='text-slate-900'>
       <Seo />
 
-      <object className='w-screen h-screen' data="https://docs.google.com/gview?embedded=true&url=https://deploy-preview-25--alkoozcafe-frontend.netlify.app/Al%20Kooz%20Cafe%20%E2%80%94%20Menu.pdf" type="application/pdf">
+      <iframe className='w-screen h-screen' frameBorder={0} src='https://docs.google.com/gview?embedded=true&url=https://deploy-preview-25--alkoozcafe-frontend.netlify.app/Al%20Kooz%20Cafe%20%E2%80%94%20Menu.pdf'>
         <Background />
         <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
           <Header className='w-full' />
@@ -24,7 +24,7 @@ const IndexPage: React.FC<IndexPageProps> = ({}) =>
             </div>
           </div>
         </div>
-      </object>
+      </iframe>
     </main>
   )
 
