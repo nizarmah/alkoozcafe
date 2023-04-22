@@ -6,7 +6,12 @@ import Background from '../components/Background'
 import Header from '../components/Header'
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
-  const pdfMenuUrl = new URL('/Al Kooz Cafe — Menu.pdf', location.href)
+  const baseUrl = location.href || 'https://alkoozcafe.com/'
+
+  const pdfMenuUrl = new URL(
+    '/Al Kooz Cafe — Menu.pdf',
+    baseUrl
+  )
 
   return (
     <main className='text-slate-900'>
