@@ -1,67 +1,48 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
-import type { HeadFC } from 'gatsby'
+import { HeadFC, Link, PageProps } from 'gatsby'
 
-import Menu from '../components/Menu'
+import Seo from '../components/Seo'
 import Background from '../components/Background'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Seo from '../components/Seo'
-import { cleanMenu } from '../utils/cleaner'
-import PrintCompatibleContent from '../components/PrintCompatibleContent'
 
-type IndexPageProps = {
-  data: {
-    sanityMenu: NullableSanityMenu
-  }
-}
+const IndexPage: React.FC<PageProps> = ({ location }) => {
+  const baseUrl = location.href || 'https://alkoozcafe.com/'
 
-const IndexPage: React.FC<IndexPageProps> = ({ data }) =>
-  (
+  const pdfMenuUrl = new URL(
+    '/Al Kooz Cafe — Menu.pdf',
+    baseUrl
+  )
+
+  return (
     <main className='text-slate-900'>
       <Seo />
-      <Background />
-      <div className='px-2 print:px-0 lg:px-16 print:lg:px-0 md:px-8 print:md:px-0'>
-        <PrintCompatibleContent
-          header={
-            <Header className='w-full' />
-          }
-          footer={
-            <Footer className='print:absolute w-full bottom-0' />
-          }
-        >
-          <Menu
-            className='w-full print:w-full print:px-8 xl:w-2/3 print:xl:w-full xl:px-12 print:xl:px-8 lg:w-5/6 print:lg:w-full lg:px-6 print:lg:px-8'
-            data={cleanMenu(data.sanityMenu)}
-          />
-        </PrintCompatibleContent>
-      </div>
+
+      <iframe
+        className='w-screen h-screen'
+        frameBorder={0}
+        src={`https://docs.google.com/viewer?embedded=true&url=${pdfMenuUrl}`}
+      >
+        <Background />
+        <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
+          <Header className='w-full' />
+          <div className='w-full xl:w-2/3 xl:px-12 lg:w-5/6 lg:px-6'>
+            <div className='pt-12 pb-4 px-6 md:pt-28 md:pb-12'>
+              <h1 className='text-4xl font-bold mb-16'>Something went wrong</h1>
+              <p>Looks like your browser cannot display the Menu</p>
+              <Link
+                to='/Al%20Kooz%20Cafe%20—%20Menu.pdf'
+                className='text-md font-normal'
+              >
+                Click here to download the Menu
+              </Link>
+            </div>
+          </div>
+        </div>
+      </iframe>
     </main>
   )
+}
 
 export default IndexPage
 
 export const Head: HeadFC = () => <title>Al Kooz Café</title>
-
-export const query = graphql`
-{
-  sanityMenu(_id: { eq: "menu" }) {
-    categoryList {
-      name {
-        nameArabic
-        nameEnglish
-      }
-      itemList {
-        name {
-          nameArabic
-          nameEnglish
-        }
-        priceList {
-          amount
-          currency
-        }
-      }
-    }
-  }
-}
-`

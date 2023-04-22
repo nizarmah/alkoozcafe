@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
     <main className='text-slate-900'>
       <Background />
       <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
-        <Header />
+        <Header className='w-full' />
         <div className='w-full xl:w-2/3 xl:px-12 lg:w-5/6 lg:px-6'>
           <div className='pt-12 pb-4 px-6 md:pt-28 md:pb-12'>
             <h1 className='text-4xl font-bold mb-16'>Page Not Found</h1>
