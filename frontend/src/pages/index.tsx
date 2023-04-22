@@ -7,12 +7,15 @@ import Header from '../components/Header'
 
 type IndexPageProps = {}
 
-const IndexPage: React.FC<IndexPageProps> = ({}) =>
-  (
+const IndexPage: React.FC<IndexPageProps> = ({}) => {
+  const baseUrl = window.location.href
+  const pdfMenuUrl = new URL('/Al Kooz Cafe — Menu.pdf', baseUrl)
+
+  return (
     <main className='text-slate-900'>
       <Seo />
 
-      <iframe className='w-screen h-screen' frameBorder={0} src='https://docs.google.com/viewer?embedded=true&url=https://deploy-preview-25--alkoozcafe-frontend.netlify.app/Al%20Kooz%20Cafe%20%E2%80%94%20Menu.pdf'>
+      <iframe className='w-screen h-screen' frameBorder={0} src={`https://docs.google.com/viewer?embedded=true&url=${pdfMenuUrl}`}>
         <Background />
         <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
           <Header className='w-full' />
@@ -27,6 +30,7 @@ const IndexPage: React.FC<IndexPageProps> = ({}) =>
       </iframe>
     </main>
   )
+}
 
 export default IndexPage
 
