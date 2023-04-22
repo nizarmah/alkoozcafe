@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <iframe
         className='w-screen h-screen'
         frameBorder={0}
-        src={`https://docs.google.com/viewer?embedded=true&url=${pdfMenuUrl}`}
+        src={`https://docs.google.com/gview?embedded=true&url=${pdfMenuUrl}`}
       >
         <Background />
         <div className='px-2 lg:px-24 lg:px-16 md:px-8'>
