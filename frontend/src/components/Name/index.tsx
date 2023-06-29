@@ -12,8 +12,8 @@ const Name: React.FC<NameProps> = ({ className, data }) => {
   return (
     <div className={className}>
       <div className='flex justify-between'>
-        <h4>{englishName}</h4>
-        <h4>{arabicName}</h4>
+        <h4 dir='ltr'>{englishName}</h4>
+        <h4 dir='rtl'>{arabicName}</h4>
       </div>
     </div>
   )
