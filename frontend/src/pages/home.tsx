@@ -5,7 +5,6 @@ import type { HeadFC } from 'gatsby'
 import Menu from '../components/Menu'
 import Background from '../components/Background'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Seo from '../components/Seo'
 import { cleanMenu } from '../utils/cleaner'
 import PrintCompatibleContent from '../components/PrintCompatibleContent'
@@ -25,9 +24,6 @@ const HomePage: React.FC<HomePageProps> = ({ data }) =>
         <PrintCompatibleContent
           header={
             <Header className='w-full' />
-          }
-          footer={
-            <Footer className='print:absolute w-full bottom-0' />
           }
         >
           <Menu

@@ -11,7 +11,7 @@ const Name: React.FC<NameProps> = ({ className, data }) => {
   
   return (
     <div className={className}>
-      <div className='flex justify-between'>
+      <div className='flex justify-between font-bold'>
         <h4 dir='ltr'>{englishName}</h4>
         <h4 dir='rtl'>{arabicName}</h4>
       </div>
