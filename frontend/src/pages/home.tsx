@@ -23,7 +23,7 @@ const HomePage: React.FC<HomePageProps> = ({ data }) =>
       <div className='px-2 print:px-0 lg:px-16 print:lg:px-0 md:px-8 print:md:px-0'>
         <PrintCompatibleContent
           header={
-            <Header className='w-full' />
+            <Header className='w-full pb-4' />
           }
         >
           <Menu

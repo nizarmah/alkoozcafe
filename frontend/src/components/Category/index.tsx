@@ -18,12 +18,15 @@ const Category: React.FC<CategoryProps> = ({
   data: { name, itemList },
   onLoad = () => {}
 }) => {
-  const categoryRef = React.useCallback((element: HTMLDivElement) =>
-    onLoad(element, element.lastElementChild as HTMLDivElement), [])
+  const categoryRef = React.useCallback((element: HTMLDivElement) => {
+    if (element && onLoad) {
+      onLoad(element, element.lastElementChild as HTMLDivElement)
+    }
+  }, [onLoad])
 
   return (
     <div ref={categoryRef} className={className}>
-      <div className='relative flex items-center print:mb-2'>
+      <div className='relative flex items-center print:mb-2 print:break-after-avoid'>
         <div className='absolute inset-x-0 bottom-0 h-px bg-slate-900/10'></div>
         <Name
           className='text-2xl print:text-2xl font-medium flex-1 py-7 print:py-2 px-8 print:px-0'
@@ -35,7 +38,7 @@ const Category: React.FC<CategoryProps> = ({
           itemList.map((item) =>
             (
               <Item
-                className='first:mt-0 last:mb-0 relative'
+                className='first:mt-0 last:mb-0 relative print:break-inside-avoid'
                 data={item}
                 key={keygen(item.name.nameEnglish)}
               />
