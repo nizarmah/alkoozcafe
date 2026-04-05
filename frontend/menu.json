@@ -1,0 +1,932 @@
+{
+  "categoryList": [
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "زعتر",
+            "nameEnglish": "Zaatar"
+          },
+          "priceList": [
+            {
+              "amount": 3,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "زعتر و جبنة",
+            "nameEnglish": "Zaatar & Cheese"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كشك",
+            "nameEnglish": "Kishk"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كشك و جبنة",
+            "nameEnglish": "Kishk & Cheese"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "جبنة",
+            "nameEnglish": "Cheese"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "جبنة و جومبون",
+            "nameEnglish": "Cheese & Jambon"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "قاورما",
+            "nameEnglish": "Qawerma"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "قاورما ولبنة",
+            "nameEnglish": "Qawerma & Labneh"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "لحمة ناعمة",
+            "nameEnglish": "Minced Meat"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيتزا ",
+            "nameEnglish": "Pizza"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيض",
+            "nameEnglish": "Eggs"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيض وجبنه",
+            "nameEnglish": "Cheese Omelette"
+          },
+          "priceList": [
+            {
+              "amount": 8,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "حلوم",
+            "nameEnglish": "Halloum"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "لبنة بلدي",
+            "nameEnglish": "Oriental Labneh"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "لبنة امبريس",
+            "nameEnglish": "Labneh Ampris"
+          },
+          "priceList": [
+            {
+              "amount": 7,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "فول",
+            "nameEnglish": "Foul"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            },
+            {
+              "amount": 14,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مسبحة",
+            "nameEnglish": "Mosabaha"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            },
+            {
+              "amount": 14,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "فتي",
+            "nameEnglish": "Fatteh"
+          },
+          "priceList": [
+            {
+              "amount": 7,
+              "currency": "usd"
+            },
+            {
+              "amount": 18,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مقلة كشك",
+            "nameEnglish": "Kishk pan"
+          },
+          "priceList": [
+            {
+              "amount": 10,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مقلة قورما",
+            "nameEnglish": "Qawerma Pan"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "عصير طازج",
+            "nameEnglish": "Fresh Juice"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بريق شاي",
+            "nameEnglish": "Tea Pot"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "قهوة تركية",
+            "nameEnglish": "Turkish Coffee"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            },
+            {
+              "amount": 7,
+              "currency": "usd"
+            },
+            {
+              "amount": 10,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "نسكافيه",
+            "nameEnglish": "Nescafe"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كابوشينو",
+            "nameEnglish": "Cappuccino"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كاكاو",
+            "nameEnglish": "Hot Chocolate"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "زهورات",
+            "nameEnglish": "Herbs"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "شاي",
+            "nameEnglish": "Tea"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "صاج وترويقة",
+        "nameEnglish": "Saj & Breakfast"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "تبوله",
+            "nameEnglish": "Tabbouleh"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "فتوش",
+            "nameEnglish": "Fattoush"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "حمص",
+            "nameEnglish": "Hommos"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "متبل باذنجان",
+            "nameEnglish": "Motabal"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "شنكليش",
+            "nameEnglish": "Shankleesh"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "لبنة بالتوم",
+            "nameEnglish": "Labneh & Garlic"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "ورق عنب",
+            "nameEnglish": "Grape leaves"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مكدوس",
+            "nameEnglish": "Makdous"
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "حمص بقورما",
+            "nameEnglish": "Hommos & Qawerma"
+          },
+          "priceList": [
+            {
+              "amount": 8,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كبة",
+            "nameEnglish": "Kebeh"
+          },
+          "priceList": [
+            {
+              "amount": 8,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بطاطا ",
+            "nameEnglish": "Fries"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بطاط حره",
+            "nameEnglish": "Spicy Potato "
+          },
+          "priceList": [
+            {
+              "amount": 6,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "رقاقات جبنة",
+            "nameEnglish": "Cheese Roll"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مقانق",
+            "nameEnglish": "Makanik"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "سجق",
+            "nameEnglish": "Soujok"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "سودا دجاج",
+            "nameEnglish": "Chicken Liver"
+          },
+          "priceList": [
+            {
+              "amount": 7,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "مقبلات",
+        "nameEnglish": "Lebanese Mezza"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "لحمة مشوي",
+            "nameEnglish": "Grilled Meat"
+          },
+          "priceList": [
+            {
+              "amount": 15,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "كباب",
+            "nameEnglish": "Kabab"
+          },
+          "priceList": [
+            {
+              "amount": 12,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "طاووق",
+            "nameEnglish": "Tawouk"
+          },
+          "priceList": [
+            {
+              "amount": 10,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "برجر",
+            "nameEnglish": "Burger"
+          },
+          "priceList": [
+            {
+              "amount": 8,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "دبل برغر",
+            "nameEnglish": "Double Burger"
+          },
+          "priceList": [
+            {
+              "amount": 10,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "نغتس",
+            "nameEnglish": "Nuggets"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "تندرس دجاج",
+            "nameEnglish": "Chicken Tenders"
+          },
+          "priceList": [
+            {
+              "amount": 9,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "إسكالوب",
+            "nameEnglish": "Chicken Escalope"
+          },
+          "priceList": [
+            {
+              "amount": 11,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "هوت دوغ",
+            "nameEnglish": "Hot Dog"
+          },
+          "priceList": [
+            {
+              "amount": 7,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "صحن ساخن",
+        "nameEnglish": "Hot Plate"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "نوتلا",
+            "nameEnglish": "Nutella"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "الكوز بومب",
+            "nameEnglish": "Al Kooz Bomb"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "حلو",
+        "nameEnglish": "Desserts"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "مياه",
+            "nameEnglish": "Water"
+          },
+          "priceList": [
+            {
+              "amount": 0.5,
+              "currency": "usd"
+            },
+            {
+              "amount": 3,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مشروبات غازية",
+            "nameEnglish": "Soft Drinks"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "أيس تي",
+            "nameEnglish": "Iced Tea"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيريه",
+            "nameEnglish": "Perrier"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيرة بلا كحول",
+            "nameEnglish": "Non-Alcoholic Beer"
+          },
+          "priceList": [
+            {
+              "amount": 3,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "مشروب طاقة",
+            "nameEnglish": "Energy Drink"
+          },
+          "priceList": [
+            {
+              "amount": 2,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "مشروبات باردة",
+        "nameEnglish": "Cold Drinks"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "بيره",
+            "nameEnglish": "Beer"
+          },
+          "priceList": [
+            {
+              "amount": 4,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "بيره مكسيكان",
+            "nameEnglish": "Mexican Beer"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "إبريق عرق",
+            "nameEnglish": "Arak Jug"
+          },
+          "priceList": [
+            {
+              "amount": 8,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "قنينة نبيذ",
+            "nameEnglish": "Wine Bottle"
+          },
+          "priceList": [
+            {
+              "amount": 25,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "مشروبات روحية",
+        "nameEnglish": "Alcohol"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "أركيلة",
+            "nameEnglish": "Shisha"
+          },
+          "priceList": [
+            {
+              "amount": 10,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "رأس إضافي",
+            "nameEnglish": "Extra Bowl"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "أركيلة",
+        "nameEnglish": "Argile"
+      }
+    },
+    {
+      "itemList": [
+        {
+          "name": {
+            "nameArabic": "خدمة كيك",
+            "nameEnglish": "Cake Service"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "خدمة كحول",
+            "nameEnglish": "Alcohol Service"
+          },
+          "priceList": [
+            {
+              "amount": 3,
+              "currency": "usd"
+            }
+          ]
+        },
+        {
+          "name": {
+            "nameArabic": "خدمة أركيلة",
+            "nameEnglish": "Shisha Service"
+          },
+          "priceList": [
+            {
+              "amount": 5,
+              "currency": "usd"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "nameArabic": "خدمات إضافية",
+        "nameEnglish": "Extra Services"
+      }
+    }
+  ]
+}
