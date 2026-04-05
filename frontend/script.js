@@ -67,6 +67,11 @@ function renderMenu(menu) {
     var section = document.createElement("div");
     section.className = "category";
 
+    // Force page break before "Cold Drinks" so it starts on the second page
+    if (category.name.nameEnglish === "Cold Drinks") {
+      section.classList.add("page-break");
+    }
+
     // Category header
     var header = document.createElement("div");
     header.className = "category-header";

@@ -8,7 +8,7 @@
 /* --- Page / Print --- */
 @page {
   size: A4;
-  margin: 1cm 1.5cm;
+  margin: 0.27in 0.5in;
 }
 
 body {
@@ -230,5 +230,32 @@ a {
 
   .header-info a {
     color: #64748b;
+  }
+
+  /* Larger fonts for print readability */
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-info {
+    font-size: 0.85rem;
+  }
+
+  .category-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .item .name-en,
+  .item .name-ar {
+    font-size: 1rem;
+  }
+
+  .item .price {
+    font-size: 0.95rem;
+  }
+
+  /* Page break before Cold Drinks section */
+  .page-break {
+    break-before: page;
   }
 }
